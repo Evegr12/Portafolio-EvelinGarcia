@@ -1440,6 +1440,482 @@ h1,h2,h3{font-family:'Manrope',sans-serif}
   .footer-bottom p { margin: 0; }
 }
 
+/* =========================================================
+   BOTÓN VER CASO
+   ========================================================= */
+
+.case-study-button {
+  padding: 0;
+  border: none;
+
+  color: var(--wine);
+  background: transparent;
+
+  font-family: inherit;
+  font-size: 0.92rem;
+  font-weight: 800;
+
+  cursor: pointer;
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.case-study-button:hover {
+  color: var(--magenta);
+  transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   MODAL DEL CASO DE ESTUDIO
+   ========================================================= */
+
+.case-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 28px;
+
+  background: rgba(23, 13, 29, 0.78);
+  backdrop-filter: blur(10px);
+
+  animation: case-overlay-enter 0.25s ease both;
+}
+
+.case-modal {
+  position: relative;
+  overflow-y: auto;
+
+  width: min(1180px, 100%);
+  max-height: calc(100vh - 56px);
+
+  border: 1px solid var(--border);
+  border-radius: 30px;
+
+  color: var(--text);
+  background: var(--background);
+
+  box-shadow: 0 36px 100px rgba(20, 5, 25, 0.42);
+
+  animation: case-modal-enter 0.35s ease both;
+}
+
+.case-modal-close {
+  position: sticky;
+  top: 18px;
+  float: right;
+  z-index: 20;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 44px;
+  height: 44px;
+  margin: 18px 18px -62px 0;
+
+  border: 1px solid var(--border);
+  border-radius: 50%;
+
+  color: var(--text);
+  background: var(--surface);
+
+  box-shadow: var(--shadow-soft);
+
+  cursor: pointer;
+
+  transition:
+    color 0.2s ease,
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.case-modal-close:hover {
+  color: #ffffff;
+  background: var(--magenta);
+  transform: rotate(5deg);
+}
+
+
+/* Encabezado del modal */
+
+.case-modal-hero {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1.05fr)
+    minmax(340px, 0.95fr);
+  align-items: center;
+  gap: 48px;
+
+  padding: 66px 56px 50px;
+
+  background:
+    radial-gradient(
+      circle at 10% 10%,
+      rgba(214, 63, 127, 0.15),
+      transparent 300px
+    ),
+    var(--surface-soft);
+}
+
+.case-modal-image {
+  overflow: hidden;
+
+  aspect-ratio: 16 / 10;
+
+  border: 8px solid var(--surface);
+  border-radius: 24px;
+
+  background: var(--surface);
+  box-shadow: var(--shadow-strong);
+}
+
+.case-modal-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: top;
+}
+
+.case-modal-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+
+  color: #ffffff;
+  background: linear-gradient(
+    135deg,
+    var(--wine-dark),
+    var(--purple)
+  );
+
+  font-weight: 800;
+}
+
+.case-modal-intro h2 {
+  margin: 0;
+
+  font-size: clamp(2.1rem, 3vw, 3.5rem);
+  line-height: 1.06;
+  letter-spacing: -0.05em;
+}
+
+.case-modal-intro > p:not(.eyebrow) {
+  margin: 18px 0 0;
+
+  color: var(--text-soft);
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+
+/* Tecnologías */
+
+.case-modal-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  margin-top: 22px;
+}
+
+.case-modal-tags span {
+  padding: 7px 11px;
+
+  border: 1px solid rgba(214, 63, 127, 0.25);
+  border-radius: 999px;
+
+  color: var(--wine);
+  background: var(--surface);
+
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+
+/* Enlaces del modal */
+
+.case-modal-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+
+  margin-top: 24px;
+}
+
+.case-modal-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  min-height: 42px;
+  padding: 0 16px;
+
+  border: 1px solid var(--wine);
+  border-radius: 999px;
+
+  color: var(--wine);
+  background: transparent;
+
+  font-size: 0.84rem;
+  font-weight: 800;
+
+  transition:
+    color 0.2s ease,
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.case-modal-links a:hover {
+  color: #ffffff;
+  background: var(--wine);
+  transform: translateY(-2px);
+}
+
+
+/* Contenido del caso */
+
+.case-modal-content {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+
+  padding: 46px 56px 58px;
+}
+
+.case-section {
+  padding: 26px;
+
+  border: 1px solid var(--border);
+  border-radius: 22px;
+
+  background: var(--surface);
+  box-shadow: var(--shadow-soft);
+}
+
+.case-section-wide {
+  grid-column: 1 / -1;
+}
+
+.case-section-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  margin-bottom: 16px;
+}
+
+.case-section-title span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 40px;
+  height: 40px;
+
+  border-radius: 12px;
+
+  color: var(--magenta);
+  background: var(--pink-soft);
+}
+
+.case-section-title h3 {
+  margin: 0;
+
+  color: var(--text);
+  font-size: 1.08rem;
+}
+
+.case-section p {
+  margin: 0;
+
+  color: var(--text-soft);
+  line-height: 1.72;
+}
+
+.case-list {
+  display: grid;
+  gap: 11px;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.case-list li {
+  position: relative;
+
+  padding-left: 21px;
+
+  color: var(--text-soft);
+  line-height: 1.62;
+}
+
+.case-list li::before {
+  content: "";
+
+  position: absolute;
+  top: 0.7em;
+  left: 0;
+
+  width: 8px;
+  height: 8px;
+
+  border-radius: 50%;
+  background: var(--magenta);
+}
+
+.case-challenges {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.case-challenges h3 {
+  margin: 0 0 14px;
+
+  color: var(--wine);
+  font-size: 1rem;
+}
+
+
+/* Animaciones */
+
+@keyframes case-overlay-enter {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes case-modal-enter {
+  from {
+    opacity: 0;
+    transform: translateY(24px) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+
+
+/*Galeria*/
+
+.case-gallery-section {
+  padding: 46px 56px 10px;
+  background: var(--background);
+}
+
+.case-gallery-heading {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  margin-bottom: 12px;
+}
+
+.case-gallery-heading .eyebrow {
+  margin-bottom: 3px;
+}
+
+.case-gallery-heading h3 {
+  margin: 0;
+  color: var(--text);
+  font-size: 1.55rem;
+}
+
+.case-gallery-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
+  width: 46px;
+  height: 46px;
+
+  border-radius: 14px;
+
+  color: var(--magenta);
+  background: var(--pink-soft);
+}
+
+.case-gallery-note {
+  max-width: 780px;
+  margin: 0 0 24px;
+
+  color: var(--text-soft);
+  font-size: 0.92rem;
+  line-height: 1.7;
+}
+
+.case-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.case-gallery-item {
+  overflow: hidden;
+
+  margin: 0;
+
+  border: 1px solid var(--border);
+  border-radius: 20px;
+
+  background: var(--surface);
+  box-shadow: var(--shadow-soft);
+}
+
+.case-gallery-item a {
+  display: block;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+}
+
+.case-gallery-item img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: top;
+
+  transition: transform 0.35s ease;
+}
+
+.case-gallery-item:hover img {
+  transform: scale(1.035);
+}
+
+.case-gallery-item figcaption {
+  padding: 13px 16px;
+
+  color: var(--text);
+  font-size: 0.88rem;
+  font-weight: 750;
+}
+
 @media (max-width: 580px) {
   .wrap { width: min(100% - 24px, 520px); }
 

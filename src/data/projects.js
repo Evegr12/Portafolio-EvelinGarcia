@@ -449,7 +449,7 @@ export const projects = [
       "https://github.com/Evegr12/Google-clone",
 
     demo:
-      "https://google-clone-ee4m094wp-evegr12s-projects.vercel.app/",
+      "https://google-clone-theta-nine.vercel.app/",
 
     video: "",
     caseStudyPath: "",

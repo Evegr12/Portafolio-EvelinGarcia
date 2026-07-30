@@ -2164,6 +2164,7 @@ h1,h2,h3{font-family:'Manrope',sans-serif}
    lo tiene configurado en su dispositivo */
 @media (prefers-reduced-motion: reduce) {
   .portrait-frame,
+  .portrait-glow,
   .portrait-blob-back,
   .portrait-blob-front,
   .portrait-blob-soft,
@@ -2173,13 +2174,6 @@ h1,h2,h3{font-family:'Manrope',sans-serif}
   .badge-mysql,
   .profile-card {
     animation: none;
-  }
-
-  .traits article,
-  .skills-grid article,
-  .skill-icon,
-  .skill-tags span {
-    transition: none;
   }
 }
 
@@ -2761,51 +2755,69 @@ h1,h2,h3{font-family:'Manrope',sans-serif}
     height: 20px;
   }
 
-  /* HERO MÓVIL MÁS LIMPIO */
+  /* HERO MÓVIL LIMPIO Y CON MÁS MOVIMIENTO */
 
-  .tech-badge,
-  .profile-card,
-  .portrait-code,
-  .portrait-dots {
-    display: none;
-  }
+.tech-badge,
+.profile-card,
+.portrait-code,
+.portrait-dots {
+  display: none;
+}
 
-  .hero-portrait {
-    width: 100%;
-    min-height: 390px;
-    margin: 12px auto 0;
-    transform: none;
-  }
+.hero-portrait {
+  width: 100%;
+  min-height: 390px;
+  margin: 12px auto 0;
 
-  .portrait-glow {
-    width: 360px;
-    height: 360px;
-  }
+  transform: none;
+}
 
-  .portrait-blob-back {
-    width: 330px;
-    height: 350px;
-  }
+.portrait-glow {
+  width: 360px;
+  height: 360px;
 
-  .portrait-blob-front {
-    width: 310px;
-    height: 330px;
-  }
+  animation:
+    mobile-glow-pulse 4.5s ease-in-out infinite;
+}
 
-  .portrait-blob-soft {
-    width: 345px;
-    height: 320px;
-  }
+.portrait-blob-back {
+  width: 330px;
+  height: 350px;
 
-  .portrait-orbit {
-    width: 350px;
-    height: 350px;
-    animation: none;
-  }
+  animation:
+    mobile-blob-back 6s ease-in-out infinite;
+}
 
-  .portrait-frame {
-    width: 280px;
-  }
+.portrait-blob-front {
+  width: 310px;
+  height: 330px;
+
+  animation:
+    mobile-blob-front 6.5s ease-in-out infinite;
+}
+
+.portrait-blob-soft {
+  width: 345px;
+  height: 320px;
+
+  animation:
+    mobile-blob-soft 7s ease-in-out infinite;
+}
+
+.portrait-orbit {
+  width: 350px;
+  height: 350px;
+
+  animation:
+    mobile-orbit-move 8s ease-in-out infinite;
+}
+
+.portrait-frame {
+  width: 280px;
+
+  animation:
+    mobile-portrait-float 4s ease-in-out infinite;
+}
 
   .traits {
     padding-bottom: 74px;

@@ -1048,7 +1048,10 @@ h1,h2,h3{font-family:'Manrope',sans-serif}
   line-height: 1.06;
 }
 
-.skills .section-title h2 span {
+.section-title h2 span,
+.about-heading h2 span,
+.contact h2 span,
+.blog .section-title h2 span {
   color: var(--magenta);
 }
 

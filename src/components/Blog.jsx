@@ -20,7 +20,7 @@ const [selectedPost, setSelectedPost] = useState(null);
             </p>
 
             <h2>
-                Experiencias, soluciones y aprendizajes
+                <span>Experiencias, soluciones y aprendizajes</span>{" "}
                 durante mi camino como desarrolladora
             </h2>
 

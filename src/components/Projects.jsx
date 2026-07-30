@@ -20,7 +20,8 @@ export default function Projects() {
             </p>
 
             <h2>
-                Soluciones construidas para problemas reales
+                Soluciones construidas para{" "}
+                <span>problemas reales</span>
             </h2>
 
             <p className="section-description">

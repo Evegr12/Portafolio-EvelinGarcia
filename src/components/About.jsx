@@ -7,7 +7,8 @@ export default function About() {
                 <p className="eyebrow">SOBRE MÍ</p>
 
                 <h2>
-                Construyo con lógica, creatividad y atención al detalle.
+                    Construyo con lógica, creatividad y{" "}
+                    <span>atención al detalle</span>
                 </h2>
             </div>
 

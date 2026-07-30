@@ -12,7 +12,7 @@ import { SiSpringboot, SiMysql } from "react-icons/si";
 
 export default function Hero() {
     return (
-        <section className="hero wrap" id="inicio">
+    <section className="hero wrap" id="inicio">
         <div className="hero-copy">
             <p className="eyebrow">
             DESARROLLADORA JAVA FULL STACK
@@ -36,7 +36,7 @@ export default function Hero() {
             conectando interfaz, backend, datos y necesidades reales.
             </p>
 
-            <div className="hero-actions-group">
+        <div className="hero-actions-group">
             <div className="actions">
                 <a className="btn primary" href="#proyectos">
                 Ver proyectos
@@ -82,58 +82,58 @@ export default function Hero() {
                 Correo
                 </a>
             </div>
-            </div>
         </div>
+    </div>
 
         <div
             className="hero-portrait"
             role="img"
             aria-label="Retrato profesional de Evelin García Romero acompañado de tecnologías Java, Spring Boot, React y MySQL"
         >
-            <div
+        <div
             className="portrait-glow"
             aria-hidden="true"
-            ></div>
+        ></div>
 
-            <div
+        <div
             className="portrait-blob portrait-blob-back"
             aria-hidden="true"
-            ></div>
+        ></div>
 
-            <div
+        <div
             className="portrait-blob portrait-blob-front"
             aria-hidden="true"
-            ></div>
+        ></div>
 
-            <div
+        <div
             className="portrait-blob portrait-blob-soft"
             aria-hidden="true"
-            ></div>
+        ></div>
 
-            <div
+        <div
             className="portrait-orbit"
             aria-hidden="true"
-            ></div>
+        ></div>
 
             <div className="portrait-frame">
-            <img
-                src="/evelin-perfil.png"
-                alt="Evelin García Romero, desarrolladora Java Full Stack"
-            />
+                <img
+                    src="/evelin-perfil.png"
+                    alt="Evelin García Romero, desarrolladora Java Full Stack"
+                />
             </div>
 
             <div className="tech-badge badge-react">
-            <FaReact aria-hidden="true" />
-            <span>React</span>
+                <FaReact aria-hidden="true" />
+                <span>React</span>
             </div>
 
-            <div className="tech-badge badge-java">
-            <SiSpringboot aria-hidden="true" />
+                <div className="tech-badge badge-java">
+                <SiSpringboot aria-hidden="true" />
 
-            <span>
-                Java +<br />
-                Spring Boot
-            </span>
+                <span>
+                    Java +<br />
+                    Spring Boot
+                </span>
             </div>
 
             <div className="tech-badge badge-mysql">

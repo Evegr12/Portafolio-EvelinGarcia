@@ -5,6 +5,7 @@ import Traits from "./components/Traits";
 import Projects from "./components/Projects";
 import About from "./components/About";
 import Skills from "./components/Skills";
+import Blog from "./components/Blog";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
@@ -21,6 +22,7 @@ function App() {
         <Projects/>
         <About/>
         <Skills/>
+        <Blog />
         <Contact/>
         <Footer/>
       </main>

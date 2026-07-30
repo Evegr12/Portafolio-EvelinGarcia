@@ -11,6 +11,7 @@ const navigation = [
     { label: "Proyectos", href: "#proyectos" },
     { label: "Sobre mí", href: "#sobre-mi" },
     { label: "Habilidades", href: "#habilidades" },
+    { label: "Blog", href: "#blog" },
     { label: "Contacto", href: "#contacto" }
 ];
 

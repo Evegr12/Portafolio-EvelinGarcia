@@ -27,6 +27,7 @@ export default function Footer() {
                     <a href="#proyectos">Proyectos</a>
                     <a href="#sobre-mi">Sobre mí</a>
                     <a href="#habilidades">Habilidades</a>
+                    <a href="#blog">Blog</a>
                     <a href="#contacto">Contacto</a>
                 </nav>
                 </div>

@@ -45,7 +45,7 @@ export default function Hero() {
 
                 <a
                 className="btn secondary"
-                href="/cv-evelin.pdf"
+                href="/CV-EvelinGarciaRomero.pdf"
                 download
                 >
                 Descargar CV

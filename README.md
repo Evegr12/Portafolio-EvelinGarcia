@@ -202,5 +202,3 @@ Desarrolladora Java Full Stack.
 
 [GitHub](https://github.com/Evegr12) · [LinkedIn](https://www.linkedin.com/in/evelin-garcia-romero) · [Correo](mailto:evelin.garciaromero12@gmail.com)
 
-[GitHub](https://github.com/Evegr12) · [LinkedIn](https://www.linkedin.com/in/evelin-garcia-romero) · [Correo](mailto:evelin.garciaromero12@gmail.com)
-
